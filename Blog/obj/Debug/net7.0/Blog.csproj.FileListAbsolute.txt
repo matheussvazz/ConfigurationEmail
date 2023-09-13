@@ -1,0 +1,6 @@
+C:\Users\matheus.s.vaz\OneDrive - Corporativo\Área de Trabalho\Estudos\CURSO BALTA.IO\API\Blog\obj\Debug\net7.0\Blog.csproj.AssemblyReference.cache
+C:\Users\matheus.s.vaz\OneDrive - Corporativo\Área de Trabalho\Estudos\CURSO BALTA.IO\API\Blog\obj\Debug\net7.0\Blog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matheus.s.vaz\OneDrive - Corporativo\Área de Trabalho\Estudos\CURSO BALTA.IO\API\Blog\obj\Debug\net7.0\Blog.AssemblyInfoInputs.cache
+C:\Users\matheus.s.vaz\OneDrive - Corporativo\Área de Trabalho\Estudos\CURSO BALTA.IO\API\Blog\obj\Debug\net7.0\Blog.AssemblyInfo.cs
+C:\Users\matheus.s.vaz\OneDrive - Corporativo\Área de Trabalho\Estudos\CURSO BALTA.IO\API\Blog\obj\Debug\net7.0\Blog.csproj.CoreCompileInputs.cache
+C:\Users\matheus.s.vaz\OneDrive - Corporativo\Área de Trabalho\Estudos\CURSO BALTA.IO\API\Blog\obj\Debug\net7.0\Blog.MvcApplicationPartsAssemblyInfo.cache
