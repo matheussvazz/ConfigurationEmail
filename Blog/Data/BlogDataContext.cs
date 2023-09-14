@@ -20,5 +20,11 @@ namespace Blog.Data
             modelBuilder.ApplyConfiguration(new UserMap());
             modelBuilder.ApplyConfiguration(new PostMap());
         }
+
+        internal Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
