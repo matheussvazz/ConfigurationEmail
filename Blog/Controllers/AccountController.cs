@@ -4,6 +4,7 @@ using Blog.ViewModels;
 using Blog.Data;
 using Blog.Extensions;
 using Blog.Models;
+using Blog.ViewModels.Accounts;
 using SecureIdentity.Password;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,7 @@ namespace Blog.Controllers
         [HttpPost("v1/accounts/login")]
         public async Task<IActionResult> Post(
             [FromBody] RegisterViewModel model,
+            [FromServices] EmailService emailService,
             [FromServices] BlogDataContext context)
         {
             if (!ModelState.IsValid)
@@ -36,6 +38,11 @@ namespace Blog.Controllers
                 await context.Users.AddAsync(user);
                 await context.SaveChangesAsync();
 
+                emailService.Send(
+                user.Name,
+               user.Email,
+                       subject: "Bem vindo ao blog!",
+                       body: $"Sua senha é {password}");
                 return Ok(new ResultViewModel<dynamic>(new
                 {
                     user = user.Email,

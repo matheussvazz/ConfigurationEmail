@@ -2,6 +2,7 @@ using Blog.Data;
 using Blog.Extensions;
 using Blog.Models;
 using Blog.ViewModels;
+using Blog.ViewModels.Categories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -52,7 +53,7 @@ namespace Blog.Controllers
 
         [HttpPost("v1/categories")]
         public async Task<IActionResult> PostAsync(
-            [FromBody] ResultViewModel model,
+            [FromBody] EditorCategoryViewModel model,
             [FromServices] BlogDataContext context)
         {
             if (!ModelState.IsValid)
