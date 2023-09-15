@@ -110,7 +110,7 @@ namespace Blog.Controllers
             var fileName = $"{Guid.NewGuid().ToString()}.jpg";
             var data = new Regex(@"^data:image\/[a-z]+;base64,")
                       .Replace(model.Base64Image, "");
-            var bytes byte[] = Convert.FromBase64String(data);
+            var bytes = Convert.FromBase64String(data);
 
             try
             {
